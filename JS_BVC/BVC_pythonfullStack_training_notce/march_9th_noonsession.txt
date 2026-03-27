@@ -1,0 +1,24 @@
+JavaScript:(converting static pages to dynamic pages)
+
+- used to develop client side as well as server side.
+- JS is a single threaded and synchronous programming language which is used for converting static pages to dynamic pages.
+- synchronous -> line by line execution.
+- asynchronous -> executes all lines of code at a time
+- js is by default synchronous but we can achieve asynchronous through callbacks,promises
+- single thread -> single task execute at a single time
+
+synchrnous code - no delay
+asynchronous code - delay
+eg:
+	const a = 0
+	const b = 1
+	console.log(a+b)  # which is a synchronous code
+ 
+how to convert static to dynamic?
+-by using down manipulations 
+
+Variables:
+-> used to store data
+-> javascripts upto 5 versions only client side(convert static to dynamic)
+   ECMA(European Computer Manufacturers Association)Script versions 6(both client and server side renderings)
+   ES6

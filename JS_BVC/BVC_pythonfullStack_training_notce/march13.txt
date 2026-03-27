@@ -1,0 +1,86 @@
+----------------------------------------------
+//call back function
+function greet(name, callback){
+    console.log("hi" +name);
+    callback(); // call the passed function
+}
+function sayBye(){
+    console.log("Bye!");
+}
+greet("john",sayBye)
+
+//didnt apply any delay (Synchronous)
+//call back function
+function processUser(name, callBack){
+    console.log("Processing User:",name)
+    callBack(name)
+}
+
+processUser("Alice",function(userName){
+    console.log("welcome!,"+userName)
+});
+
+----------------------------------------------
+//Asynchronous in callback
+to apply delay in webpages we use setTimeout(to apply delay in code) and something
+
+
+console.log("start");
+
+setTimeout(function(){
+    console.log("call back after 2 seconds");
+})
+
+console.log("end");
+
+here it is asynchronous so first start will be executed then the function will wait 2 seconds so it passes to next one then print end after that function will be executed
+
+console.log("start");
+
+setTimeout(function(){
+    console.log("call back after 2 seconds");
+})
+
+console.log("end");
+the disadvantage of callback is callback hell
+
+//promise example
+
+const checkAge = new Promise((resolve, reject)=>
+{
+    const age = 20
+    if(age >= 18){
+        resolve("Access granted"); //success
+    }
+    else{
+        reject("Access denied"); //error
+    }
+});
+checkAge
+.then((message)=>{
+    console.log(message);  //runs if resolved
+})
+.catch((error)=> {
+    console.log(error); //runs if rejected
+})
+
+//promises using function
+function fetchdata(){
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            const success=false;
+            if(success){
+                resolve("Data fetched successfully✅");
+            }else{
+                reject("failed to  fetch data❌");
+            }
+        },2000);
+    });
+}
+fetchdata()
+    .then((data)=>{
+        console.log(data);
+    })
+    .catch((err)=>{
+        console.log(err);
+    })

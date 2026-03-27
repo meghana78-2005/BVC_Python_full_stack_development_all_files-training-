@@ -1,0 +1,17 @@
+web applications are for client server communication
+---------------------------------------------------------------------
+>dom - document object model
+-dom is a tree like structure which is represents the html document.
+html ------------1)head---inside head----title,metadata,links
+		     2)body---inside body----content,script
+
+---------------------------------------------------------------------
+---->
+CRP(crtical rendering path)
+-principle of web page how it is going to works; in 6 paths
+1.DOM
+2.CSS Object model
+3.JS-render tree
+4.(1+2+3)
+5.painting
+6.composting

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="joinForm">
+        <label>Name(must fill):</label>
+        <input type="text" id="nameInput" required minlength="3"><br><br>
+        <label>email(must look like email):</label>
+        <input type="email" id="emailInput" required><br><br>
+        <label>Age(must be number):</label>
+        <input type="number" id="ageInput" min="13" max="120" required><br><br>
+        <button type="submit">Join!</button>
+
+    </form>
+    <div id="output"></div>
+    <script>
+        document.getElementById("joinForm").addEventListener("submit", function(e){
+            e.preventDefault();
+            const Name = document.getElementById("nameInput").value;
+            const email = document.getElementById("emailInput").value;
+            const Age = document.getElementById("ageInput").value;
+
+
+            document.getElementById("output").innerHTML = `
+            Name:${Name},
+            email:${email},
+            Age:${Age}`
+
+        });
+
+    </script>
+</body>
+
+</html>

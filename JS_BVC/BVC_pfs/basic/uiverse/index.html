@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Study Planner</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Smart Study Planner</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+                        <li><a href="#" class="nav-link" data-page="planner">Study Planner</a></li>
+                        <li><a href="#" class="nav-link" data-page="progress">Progress</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <div class="hero">
+                <h1>Organize Your Study Time Effectively</h1>
+                <p>Boost your productivity and manage your academic tasks with our smart study planner. Create goals, set reminders, and track your progress all in one place.</p>
+                <button class="btn btn-primary" id="getStarted">
+                    <i class="fas fa-rocket"></i> Get Started
+                </button>
+            </div>
+            <div class="features">
+                <div class="feature-card">
+                    <i class="fas fa-tasks"></i>
+                    <h3>Task Management</h3>
+                    <p>Create, organize, and track your study tasks with ease.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-bell"></i>
+                    <h3>Smart Reminders</h3>
+                    <p>Set alarms and notifications to never miss a deadline.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Progress Tracking</h3>
+                    <p>Visualize your progress with timelines and statistics.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Planner Page -->
+        <section id="planner" class="page">
+            <div class="planner-header">
+                <h2>My Study Planner</h2>
+                <div class="planner-controls">
+                    <button class="btn btn-secondary" id="clearTasks">
+                        <i class="fas fa-trash"></i> Clear All
+                    </button>
+                    <button class="btn btn-primary" id="addSampleTasks">
+                        <i class="fas fa-plus"></i> Add Sample Tasks
+                    </button>
+                </div>
+            </div>
+            <div class="task-form">
+                <h3>Add New Study Task</h3>
+                <form id="taskForm">
+                    <div class="form-group">
+                        <label for="taskTitle">Task Title</label>
+                        <input type="text" id="taskTitle" class="form-control" placeholder="e.g., Read Chapter 5 of Biology" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="taskDate">Due Date</label>
+                            <input type="date" id="taskDate" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="taskPriority">Priority</label>
+                            <select id="taskPriority" class="form-control">
+                                <option value="low">Low</option>
+                                <option value="medium" selected>Medium</option>
+                                <option value="high">High</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="taskSubject">Subject</label>
+                            <input type="text" id="taskSubject" class="form-control" placeholder="e.g., Mathematics">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="taskDescription">Description (Optional)</label>
+                        <textarea id="taskDescription" class="form-control" rows="3" placeholder="Add details about your task..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-plus-circle"></i> Add Task
+                    </button>
+                </form>
+            </div>
+            <div class="task-list">
+                <h3>My Tasks</h3>
+                <div id="tasksContainer">
+                    <!-- Tasks will be added here dynamically -->
+                </div>
+            </div>
+        </section>
+        <!-- Progress Page -->
+        <section id="progress" class="page">
+            <h2>My Study Progress</h2>
+            <div class="progress-stats">
+                <div class="stat-card">
+                    <i class="fas fa-tasks"></i>
+                    <h3 id="totalTasks">0</h3>
+                    <p>Total Tasks</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-check-circle"></i>
+                    <h3 id="completedTasks">0</h3>
+                    <p>Completed</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-clock"></i>
+                    <h3 id="pendingTasks">0</h3>
+                    <p>Pending</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-fire"></i>
+                    <h3 id="productivityScore">0%</h3>
+                    <p>Productivity</p>
+                </div>
+            </div>
+            <div class="timeline">
+                <h3>Study Timeline</h3>
+                <div id="timelineContainer">
+                    <!-- Timeline items will be added here dynamically -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Smart Study Planner</span>
+                </div>
+                <p>Boost your academic productivity with our smart study planner</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Alarm Notification -->
+    <div class="alarm" id="alarm">
+        <i class="fas fa-bell"></i>
+        <div class="alarm-content">
+            <h4>Task Added Successfully!</h4>
+            <p>Your study task has been added to your planner.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+--->
+//day week checker
+const number = prompt("Enter number between 1 - 7: ");
+switch(number){
+    case '1':
+        console.log("monday");
+        break;
+    case '2':
+        console.log("Tuesday");
+        break;
+    case '3':
+        console.log("wednesday");
+        break;
+    case '4':
+        console.log("Thursday");
+        break;
+    case '5':
+        console.log("Friday");
+        break;
+    case '6':
+        console.log("Saturday");
+        break;
+    case '7':
+        console.log("Sunday");
+        break;
+    default:
+        console.log("not in range");
+}
+
+here we have given input as string so we give numbers as string
+
+---->
+const number = parseInt(prompt("Enter number between 1 - 7: "));  or we can use number(prompt())
+switch(number)
+{
+    case 1:
+        console.log("monday");
+        break;
+    case 2:
+        console.log("Tuesday");
+        break;
+    case 3:
+        console.log("wednesday");
+        break;
+    case 4:
+        console.log("Thursday");
+        break;
+    case 5:
+        console.log("Friday");
+        break;
+    case 6:
+        console.log("Saturday");
+        break;
+    case 7:
+        console.log("Sunday");
+        break;
+    default:
+        console.log("not in range");
+}
+
+--------------------------------------------------------------------
+//printing 1 - 30 numbers using for loop
+for(let a = 1; a<=30; a++)
+{
+    console.log(a)
+}
+
+---->
+//  printing divisibles of 3,5 if not then printing number
+for(let a = 1; a<=30; a++)
+{
+    if(a%3 == 0 & a%5==0){
+        console.log("fizz buzz");
+    }
+    else if(a%3==0 ){
+        console.log("Fizz");
+    }
+    else if(a%5==0){
+        console.log("buzz");
+    }
+    else{
+        console.log(a)
+    }
+}
+
+---------------------------------------------------
+--->for of is used to get objects from for of 
+---> for in - gettin objects
+//take an array = [12,"hyfytf",true,null] # it is an array in javascript but it will be a list in other languages
+const arr = [1,"jgdyf",true,null]
+for(let value of arr){
+    console.log(value)
+}
+//using normal for loop for this program'
+const arr = [1,"jgdyf",true,null]
+for(let i = 0;i<=arr.length;i++){
+    console.log(arr[i])
+}
+
+---->using for in loop(for index of that array)
+const arr = [1,"jgdyf",true,null]
+for(let index in arr){
+    console.log(index)
+}
+----->
+const obj = {
+    name: "megha",
+    age: "1000",
+    city: "amp"
+}
+for(let key in obj){
+    console.log(key,obj[key])
+}
+
+-------------------------------------------------------------
+Array Methods:
+push : adds element at the end of the array
+pop : deletes element from end
+concatenation : adds multiple arrays into singel one
+unshift : adds starting of array
+shift : removes starting of value from array
+slice - returns of a piece of array
+	syntax: slice(startIndex, endIndex)
+splice : used to change the original array
+	syntax: splice(startIndex,deleteCount,newElement....)
+
+--------------------------------------------------------------
+Objects:
+In js objects is a dat structure which can store the properties and methods
+	properties: a named value that describes the objects characteristics.
+	methods: a functions that can be performed in a objects is called methods
+	syntax:
+			object{
+				    prop:value
+			}
