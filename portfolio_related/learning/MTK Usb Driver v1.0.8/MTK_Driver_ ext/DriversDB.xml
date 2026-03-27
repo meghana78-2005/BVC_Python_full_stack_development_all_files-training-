@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DriversDB CurrentVersion="1.00">
+	<Driver name="MTK USB Port">
+		<x86>
+			<inf>.\Driver_Auto_Installer_EXE_v1.1352.00\SmartPhoneDriver\x86\Infs\usbvcom_brom.inf</inf>	
+		</x86>
+		<amd64>
+			<inf>.\Driver_Auto_Installer_EXE_v1.1352.00\SmartPhoneDriver\x64\Infs\usbvcom_brom.inf</inf>
+		</amd64>
+	</Driver>	
+	<Driver name="PreLoader USB VCOM Port">
+		<x86>
+			<inf>.\Driver_Auto_Installer_EXE_v1.1352.00\SmartPhoneDriver\x86\Infs\usbvcom.inf</inf>	
+		</x86>
+		<amd64>
+			<inf>.\Driver_Auto_Installer_EXE_v1.1352.00\SmartPhoneDriver\x64\Infs\usbvcom.inf</inf>
+		</amd64>
+	</Driver>	
+	<Driver name="MediaTek USB VCOM (Android)">
+		<x86>
+			<inf>.\SP_Drivers_EXE_v1.6\cdc-acm.inf</inf>	
+		</x86>
+		<amd64>
+			<inf>.\SP_Drivers_EXE_v1.6\cdc-acm.inf</inf>
+		</amd64>
+	</Driver>
+	<Driver name="ADB">
+		<x86>
+			<inf>.\adb_usb_driver\android_winusb.inf</inf>
+			<dll>.\adb_usb_driver\i386\WdfCoInstaller01009.dll</dll>
+			<dll>.\adb_usb_driver\i386\winusbcoinstaller2.dll</dll>
+			<dll>.\adb_usb_driver\i386\WUDFUpdate_01009.dll</dll>
+			<dll>.\adb_usb_driver\i386\USBCoInstaller.dll</dll>
+			<CoDeviceInstallers>USBCoInstaller.dll,Zoom2_CoInstaller</CoDeviceInstallers>	
+		</x86>
+		<amd64>
+			<inf>.\adb_usb_driver\android_winusb.inf</inf>
+			<dll>.\adb_usb_driver\amd64\WdfCoInstaller01009.dll</dll>
+			<dll>.\adb_usb_driver\amd64\winusbcoinstaller2.dll</dll>
+			<dll>.\adb_usb_driver\amd64\WUDFUpdate_01009.dll</dll>
+			<dll>.\adb_usb_driver\amd64\USBCoInstaller.dll</dll>
+			<CoDeviceInstallers>USBCoInstaller.dll,Zoom2_CoInstaller</CoDeviceInstallers>	
+		</amd64>
+	</Driver>	
+	<!--Driver name="ADB">
+		<x86>
+			<inf>.\SP_Drivers_EXE_v1.6\android_winusb.inf</inf>
+			<dll>.\SP_Drivers_EXE_v1.6\i386\WdfCoInstaller01009.dll</dll>
+			<dll>.\SP_Drivers_EXE_v1.6\i386\winusbcoinstaller2.dll</dll>
+			<dll>.\SP_Drivers_EXE_v1.6\i386\WUDFUpdate_01009.dll</dll>
+			<dll>.\SP_Drivers_EXE_v1.6\i386\USBCoInstaller.dll</dll>
+			<CoDeviceInstallers>USBCoInstaller.dll,Zoom2_CoInstaller</CoDeviceInstallers>		
+		</x86>
+		<amd64>
+			<inf>.\SP_Drivers_EXE_v1.6\android_winusb.inf</inf>
+			<dll>.\SP_Drivers_EXE_v1.6\amd64\WdfCoInstaller01009.dll</dll>
+			<dll>.\SP_Drivers_EXE_v1.6\amd64\winusbcoinstaller2.dll</dll>
+			<dll>.\SP_Drivers_EXE_v1.6\amd64\WUDFUpdate_01009.dll</dll>
+			<dll>.\Drivers\SP_Drivers_EXE_v1.6\amd64\USBCoInstaller.dll</dll>
+			<CoDeviceInstallers>USBCoInstaller.dll,Zoom2_CoInstaller</CoDeviceInstallers>	
+		</amd64>
+	</Driver-->	
+	<Driver name="RNDIS">
+		<x86>
+			<inf>.\SP_Drivers_EXE_v1.6\tetherxp.inf</inf>	
+		</x86>
+		<amd64>
+			<inf>.\SP_Drivers_EXE_v1.6\tetherxp.inf</inf>
+		</amd64>
+	</Driver>
+	<Driver name="MTP">
+		<x86>
+			<inf>.\SP_Drivers_EXE_v1.6\wpdmtp.inf</inf>	
+		</x86>
+		<amd64>
+			<inf>.\SP_Drivers_EXE_v1.6\wpdmtp.inf</inf>
+		</amd64>
+	</Driver>		
+</DriversDB>

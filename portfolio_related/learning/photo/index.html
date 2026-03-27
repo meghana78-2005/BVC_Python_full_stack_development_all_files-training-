@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Meghana Mamidisetti</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="d-flex align-items-center justify-content-center">
+            <!-- Video Background -->
+            <div class="video-background">
+                <video autoplay muted loop playsinline id="bg-video">
+                    <source src="video5.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="container content-overlay">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-6 text-center">
+                        <div class="coin-card">
+                            <div class="coin-wrapper">
+                                <div class="coin">
+                                    <div class="side heads">
+                                        <img src="WhatsApp Image 2026-03-22 at 9.12.16 PM.jpeg" alt="Lord Krishna">
+                                    </div>
+                                    <div class="side tails">
+                                        <img src="WhatsApp Image 2026-03-22 at 9.14.59 PM.jpeg" alt="Radha">
+                                    </div>
+                                    <div class="edge"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-center mt-4">
+                        <div class="content">
+                            <h2
+                                style="font-family: 'Times New Roman', Times, serif;font-style: italic;column-gap: normal;color: bisque;">
+                                Hey guys!</h2>
+                            <h1
+                                style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: rgb(217, 20, 105);">
+                                I am Meghana </h1>
+                            <h1 style="font-family: Arial, Helvetica, sans-serif;">Python Full Stack Developer </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="about-card">
+                            <div class="row align-items-center">
+                                <div class="col-md-8 text-start">
+                                    <h2 class="section-title mb-4">About me</h2>
+                                    <h3>AI & Data Science student | Python Full Stack Trainee </h3>
+                                    <p class="about-text">
+                                        Passionate about AI, software development, and building impactful projects.
+                                        Currently learning full stack development with Python while exploring machine
+                                        learning and real-world problem solving.
+                                    </p>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <img src="WhatsApp Image 2026-03-22 at 9.14.59 PM.jpeg" class="image me-5"
+                                        alt="Meghana">
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="skills">
+            <!-- <div class="skills">HTML</div>
+            <div class="skills">CSS</div>
+            <div class="skills">JavaScript</div>
+            <div class="skills">React</div>
+            <div class="skills">Node.js</div> -->
+            <div class="app-container">
+                <div class="wallet">
+                    <div class="wallet-back"></div>
+
+                    <div class="skill-card python">
+                        <div class="skill-card-inner">
+                            <div class="card-top">
+                                <span>Python</span>
+                                <div class="chip"></div>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="card-info">
+                                    <span class="label">Version</span><span class="value">3.11</span>
+                                </div>
+                                <div class="card-number-wrapper">
+                                    <span class="hidden-stars">**** 1991</span>
+                                    <span class="card-number">first version released-1991</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card html">
+                        <div class="skill-card-inner">
+                            <div class="card-top">
+                                <span>HTML</span>
+                                <div class="chip"></div>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="card-info">
+                                    <span class="label">Version</span><span class="value">5.0</span>
+                                </div>
+                                <div class="card-number-wrapper">
+                                    <span class="hidden-stars">**** 1991</span>
+                                    <span class="card-number">Released 1991</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card css">
+                        <div class="skill-card-inner">
+                            <div class="card-top">
+                                <span>CSS</span>
+                                <div class="chip"></div>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="card-info">
+                                    <span class="label">Version</span><span class="value">3.0</span>
+                                </div>
+                                <div class="card-number-wrapper">
+                                    <span class="hidden-stars">**** 1996</span>
+                                    <span class="card-number">published in 1996</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card js">
+                        <div class="skill-card-inner">
+                            <div class="card-top">
+                                <span>JavaScript</span>
+                                <div class="chip"></div>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="card-info">
+                                    <span class="label">Version</span><span class="value">ES12</span>
+                                </div>
+                                <div class="card-number-wrapper">
+                                    <span class="hidden-stars">**** 1995</span>
+                                    <span class="card-number">Created 1995</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pocket">
+                        <svg class="pocket-svg" viewBox="0 0 280 160" fill="none">
+                            <path
+                                d="M 0 20 C 0 10, 5 10, 10 10 C 20 10, 25 25, 40 25 L 240 25 C 255 25, 260 10, 270 10 C 275 10, 280 10, 280 20 L 280 120 C 280 155, 260 160, 240 160 L 40 160 C 20 160, 0 155, 0 120 Z"
+                                fill="#1e341e"></path>
+                            <path
+                                d="M 8 22 C 8 16, 12 16, 15 16 C 23 16, 27 29, 40 29 L 240 29 C 253 29, 257 16, 265 16 C 268 16, 272 16, 272 22 L 272 120 C 272 150, 255 152, 240 152 L 40 152 C 25 152, 8 152, 8 120 Z"
+                                stroke="#3d5635" stroke-width="1.5" stroke-dasharray="6 4"></path>
+                        </svg>
+                        <div class="pocket-content">
+                            <div style="position: relative; height: 24px; width: 100%;">
+                                <div class="balance-stars">******</div>
+                                <div class="balance-real">Technical skills</div>
+                            </div>
+                            <div style="color: #698263; font-size: 12px; font-weight: 500;">
+                                cards
+                            </div>
+                            <div class="eye-icon-wrapper">
+                                <svg class="eye-icon eye-slash" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                    <line x1="3" y1="3" x2="21" y2="21"></line>
+                                </svg>
+                                <svg class="eye-icon eye-open" style="opacity: 0;" width="20" height="20"
+                                    viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col mb-4 text-center">
+                        <h2 class="section-title mb-4">Projects</h2>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-nowrap overflow-auto pb-3 custom-scrollbar justify-content-center">
+                    <div class="project-flip-card">
+                        <div class="project-flip-card-inner">
+                            <div class="card-front">
+                                <p>smart study planner</p>
+                            </div>
+                            <div class="card-back">
+                                <p style="font-size:14px; padding: 20px; line-height: 1.6; font-family:Arial; text-align: center;">An AI-powered
+                                    scheduling tool that
+                                    optimizes study sessions based on task priority
+                                    and deadlines.
+                                    Built to help students manage their time efficiently through automated reminders
+                                    and
+                                    progress tracking.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-flip-card">
+                        <div class="project-flip-card-inner">
+                            <div class="card-front">
+                                <p>AI-Web hub</p>
+                            </div>
+                            <div class="card-back">
+                                <p style="font-size:14px; padding: 20px; line-height: 1.6; font-family:Arial; text-align: center;">A centralized
+                                    platform integrating
+                                    multiple machine learning models for real-time data analysis and predictions.
+                                    Features a sleek, responsive interface designed to make complex AI tools
+                                    accessible
+                                    to everyday users.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-flip-card">
+                        <div class="project-flip-card-inner">
+                            <div class="card-front">
+                                <p>career & education advisor</p>
+                            </div>
+                            <div class="card-back">
+                                <p style="font-size:14px; padding: 20px; line-height: 1.6; font-family:Arial; text-align: center;">An AI-driven
+                                    recommendation engine
+                                    that maps student skill sets to personalized academic paths and high-growth
+                                    career
+                                    opportunities.
+                                    Features an interactive dashboard for tracking certification progress and
+                                    identifying industry-specific skill gaps.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-flip-card">
+                        <div class="project-flip-card-inner">
+                            <div class="card-front">
+                                <p>Fair-work legal navigator</p>
+                            </div>
+                            <div class="card-back">
+                                <p style="font-size:14px; padding: 20px; line-height: 1.6; font-family:Arial; text-align: center;">A specialized
+                                    LLM-powered assistant
+                                    that simplifies complex legal jargon and identifies potential risks in service
+                                    agreements.
+                                    Designed to empower non-experts by providing clear, actionable summaries of
+                                    legal
+                                    rights and contractual obligations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="contact-card">
+                            <h2 class="section-title text-center mb-5">Get In Touch</h2>
+                            <form id="contact-form">
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="name" class="form-label">Full Name</label>
+                                            <input type="text" id="name" class="form-control" placeholder="Meghana Mamidisetti" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="email" class="form-label">Email Address</label>
+                                            <input type="email" id="email" class="form-control" placeholder="meghana@example.com" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="password" class="form-label">Password</label>
+                                            <input type="password" id="password" class="form-control" placeholder="••••••••" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="message" class="form-label">Message</label>
+                                            <textarea id="message" class="form-control" rows="5" placeholder="Your message here..." required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center mt-5">
+                                        <button type="submit" class="btn-send">
+                                            <span>Send Message</span>
+                                            <div class="btn-glow"></div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

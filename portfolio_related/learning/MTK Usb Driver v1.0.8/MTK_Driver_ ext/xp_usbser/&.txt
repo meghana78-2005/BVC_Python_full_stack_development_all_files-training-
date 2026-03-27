@@ -1,0 +1,3 @@
+XP
+mdmcpq.inf£¬mdmcpq.infc:\windows\inf
+usbser.sys£¬usbser.sys c:\windows\system32\drivers
