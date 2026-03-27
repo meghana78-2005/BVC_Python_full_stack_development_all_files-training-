@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background: lightcyan;
+  color: black;
+}
+
+.main {
+  background: lightseagreen;
+  font-style: italic;
+  color: darkblue;
+  padding: 10px;
+
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li {
+  list-style: none;
+  font-size: 24px;
+}
